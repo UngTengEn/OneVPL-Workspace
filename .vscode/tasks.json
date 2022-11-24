@@ -14,6 +14,21 @@
             "presentation": {
                 "reveal": "silent"
             },
+        },
+        {
+            "label": "Clean|All",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-r",
+                "-fo",
+                "_build"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
         }
+
     ]
 }
