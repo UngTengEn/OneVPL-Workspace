@@ -1,4 +1,4 @@
 [submodule "oneVPL"]
-        path = oneVPL
-        url = https://github.com/oneapi-src/oneVPL.git
-        branch = master
+	path = oneVPL
+	url = https://github.com/oneapi-src/oneVPL.git
+	branch = master
