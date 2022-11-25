@@ -16,7 +16,7 @@
             },
         },
         {
-            "label": "Clean|All",
+            "label": "Clean|build|All",
             "type": "shell",
             "command": "rm",
             "args": [
@@ -28,6 +28,27 @@
             "presentation": {
                 "reveal": "silent"
             },
+        },
+        {
+            "label": "Clean|install|All",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-r",
+                "-fo",
+                "_install"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent"
+            },
+        },
+        {
+            "label": "Clean|All",
+            "type": "shell",
+            "command": "echo Clean|All",
+            "dependsOrder": "sequence",
+            "dependsOn": ["Clean|build|All", "Clean|install|All"]
         }
 
     ]
